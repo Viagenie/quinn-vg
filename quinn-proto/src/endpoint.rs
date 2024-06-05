@@ -5,9 +5,10 @@ use std::{
     net::{IpAddr, SocketAddr},
     ops::{Index, IndexMut},
     sync::Arc,
-    time::{Instant, SystemTime},
+    time::SystemTime,
 };
 
+use tokio::time::Instant;
 use bytes::{BufMut, Bytes, BytesMut};
 use rand::{rngs::StdRng, Rng, RngCore, SeedableRng};
 use rustc_hash::FxHashMap;

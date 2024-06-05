@@ -8,8 +8,8 @@ mod tracking {
     use super::*;
     use std::{
         collections::VecDeque,
-        time::{Duration, Instant},
     };
+    use tokio::time::{Duration, Instant};
     use tracing::warn;
 
     #[derive(Debug)]

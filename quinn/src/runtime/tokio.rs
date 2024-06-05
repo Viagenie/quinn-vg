@@ -4,12 +4,11 @@ use std::{
     pin::Pin,
     sync::Arc,
     task::{Context, Poll},
-    time::Instant,
 };
 
 use tokio::{
     io::Interest,
-    time::{sleep_until, Sleep},
+    time::{sleep_until, Sleep, Instant},
 };
 
 use super::{AsyncTimer, AsyncUdpSocket, Runtime, UdpPollHelper};
@@ -35,7 +34,7 @@ impl Runtime for TokioRuntime {
     }
 
     fn now(&self) -> Instant {
-        tokio::time::Instant::now().into_std()
+        tokio::time::Instant::now()
     }
 }
 

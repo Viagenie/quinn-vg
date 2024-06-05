@@ -1,7 +1,6 @@
 use std::{
     net::{IpAddr, Ipv4Addr, Ipv6Addr, SocketAddr},
     sync::Arc,
-    time::{Duration, Instant},
 };
 
 use anyhow::{Context, Result};
@@ -10,6 +9,7 @@ use clap::Parser;
 use quinn::{crypto::rustls::QuicClientConfig, TokioRuntime};
 use rustls::pki_types::{CertificateDer, ServerName, UnixTime};
 use tokio::sync::Semaphore;
+use tokio::time::{Duration,Instant};
 use tracing::{debug, error, info};
 
 use perf::stats::{OpenStreamStats, Stats};

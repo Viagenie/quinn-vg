@@ -1,9 +1,9 @@
 //! Maintain the state of local connection IDs
 use std::{
     collections::VecDeque,
-    time::{Duration, Instant},
 };
 
+use tokio::time::{Duration, Instant};
 use rustc_hash::FxHashSet;
 use tracing::{debug, trace};
 

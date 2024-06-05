@@ -6,9 +6,9 @@ use std::{
     pin::Pin,
     sync::Arc,
     task::{Context, Poll},
-    time::Instant,
 };
 
+use tokio::time::Instant;
 use udp::{RecvMeta, Transmit};
 
 /// Abstracts I/O and timer operations for runtime independence

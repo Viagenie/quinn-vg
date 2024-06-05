@@ -1,6 +1,6 @@
 use std::any::Any;
 use std::sync::Arc;
-use std::time::Instant;
+use tokio::time::Instant;
 
 use super::{Controller, ControllerFactory, BASE_DATAGRAM_SIZE};
 use crate::connection::RttEstimator;

@@ -8,9 +8,9 @@ use std::{
     ops::RangeFrom,
     str,
     sync::{Arc, Mutex},
-    time::{Duration, Instant},
 };
 
+use tokio::time::{Duration, Instant};
 use assert_matches::assert_matches;
 use bytes::BytesMut;
 use lazy_static::lazy_static;

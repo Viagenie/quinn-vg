@@ -8,9 +8,9 @@ use std::{
     net::{SocketAddr, ToSocketAddrs},
     path::PathBuf,
     sync::Arc,
-    time::{Duration, Instant},
 };
 
+use tokio::time::{Duration, Instant};
 use anyhow::{anyhow, Result};
 use clap::Parser;
 use proto::crypto::rustls::QuicClientConfig;

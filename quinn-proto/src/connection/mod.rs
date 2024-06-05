@@ -5,9 +5,8 @@ use std::{
     fmt, io, mem,
     net::{IpAddr, SocketAddr},
     sync::Arc,
-    time::{Duration, Instant},
 };
-
+use tokio::time::{Duration, Instant};
 use bytes::{Bytes, BytesMut};
 use frame::StreamMetaVec;
 use rand::{rngs::StdRng, Rng, SeedableRng};

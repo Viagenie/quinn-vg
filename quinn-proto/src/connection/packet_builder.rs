@@ -1,4 +1,5 @@
-use std::{cmp, time::Instant};
+use std::cmp;
+use tokio::time::Instant;
 
 use bytes::Bytes;
 use rand::Rng;

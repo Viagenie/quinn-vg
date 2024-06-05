@@ -3,8 +3,8 @@ use std::{
     mem,
     net::{Ipv4Addr, Ipv6Addr, SocketAddr},
     sync::Arc,
-    time::{Duration, Instant},
 };
+use tokio::time::{Duration, Instant};
 
 use assert_matches::assert_matches;
 use bytes::Bytes;

@@ -9,9 +9,8 @@ use std::{
         atomic::{AtomicBool, AtomicUsize, Ordering},
         Mutex,
     },
-    time::Instant,
 };
-
+use tokio::time::Instant;
 use socket2::SockRef;
 
 use super::{

@@ -4,8 +4,8 @@ use std::{
     pin::Pin,
     sync::Arc,
     task::{Context, Poll},
-    time::Instant,
 };
+use tokio::time::Instant;
 
 use async_io::{Async, Timer};
 

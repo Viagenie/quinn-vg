@@ -1,5 +1,5 @@
 use std::fmt::{Debug, Display, Formatter};
-use std::time::{Duration, Instant};
+use tokio::time::{Duration, Instant};
 
 use super::min_max::MinMax;
 

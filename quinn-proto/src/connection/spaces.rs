@@ -3,8 +3,9 @@ use std::{
     collections::{BTreeMap, VecDeque},
     mem,
     ops::{Bound, Index, IndexMut},
-    time::{Duration, Instant},
 };
+
+use tokio::time::{Duration, Instant};
 
 use rand::Rng;
 use rustc_hash::FxHashSet;

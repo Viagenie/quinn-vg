@@ -7,9 +7,8 @@ use std::{
     pin::Pin,
     sync::Arc,
     task::{Context, Poll, Waker},
-    time::{Duration, Instant},
 };
-
+use tokio::time::{Duration, Instant};
 use bytes::Bytes;
 use pin_project_lite::pin_project;
 use rustc_hash::FxHashMap;

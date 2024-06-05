@@ -1,7 +1,7 @@
 use std::any::Any;
 use std::fmt::Debug;
 use std::sync::Arc;
-use std::time::{Duration, Instant};
+use tokio::time::{Duration, Instant};
 
 use rand::{Rng, SeedableRng};
 

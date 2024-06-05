@@ -34,9 +34,9 @@ use std::os::windows::io::AsSocket;
 use std::{
     net::{IpAddr, Ipv6Addr, SocketAddr},
     sync::Mutex,
-    time::{Duration, Instant},
 };
 
+use tokio::time::{Duration, Instant};
 use tracing::warn;
 
 #[cfg(any(unix, windows))]

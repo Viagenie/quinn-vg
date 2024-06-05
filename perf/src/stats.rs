@@ -2,7 +2,8 @@ use hdrhistogram::Histogram;
 use quinn::StreamId;
 use std::sync::atomic::{AtomicBool, AtomicU64, AtomicUsize, Ordering};
 use std::sync::{Arc, Mutex};
-use std::time::{Duration, Instant, SystemTime};
+use std::time::{SystemTime};
+use tokio::time::{Duration, Instant};
 #[cfg(feature = "json-output")]
 use {std::fs::File, std::io, std::path::Path};
 

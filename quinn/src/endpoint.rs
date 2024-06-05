@@ -9,8 +9,8 @@ use std::{
     str,
     sync::{Arc, Mutex},
     task::{Context, Poll, Waker},
-    time::Instant,
 };
+use tokio::time::Instant;
 
 #[cfg(feature = "ring")]
 use crate::runtime::default_runtime;

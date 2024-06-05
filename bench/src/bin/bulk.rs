@@ -1,8 +1,8 @@
 use std::{
     net::SocketAddr,
     sync::{Arc, Mutex},
-    time::Instant,
 };
+use tokio::time::Instant;
 
 use anyhow::{Context, Result};
 use clap::Parser;

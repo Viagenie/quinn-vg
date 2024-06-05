@@ -1,4 +1,5 @@
-use std::{fmt, net::SocketAddr, time::Instant};
+use std::{fmt, net::SocketAddr};
+use tokio::time::Instant;
 
 use bytes::{Buf, BufMut, BytesMut};
 
